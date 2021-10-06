@@ -1,0 +1,11 @@
+{
+  "name": "aula26.2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "funcaoComPromise.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "giovani",
+  "license": "ISC"
+}
