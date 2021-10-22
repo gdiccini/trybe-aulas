@@ -15,8 +15,10 @@ const io = require('socket.io')(http, {
 // prover acesso aos arquivos dentro do diretório public adicionando a seguinte linha de código.
 app.use(express.static(__dirname + '/public'));
 
+require('./sockets/chat')(io);
 // substituimos todo o código comentado abaixo por essa linha.
 require('./sockets/ping')(io);
+
 
 // a cada nova coexão a callback é executada
 // io.on('connection', (socket) => {
