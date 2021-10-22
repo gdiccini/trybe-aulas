@@ -6,8 +6,9 @@
   <body>
     <button id="pingButton">PING</button>
     <ul id="messages"></ul>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.0.4/socket.io.js"></script>
-    <script>
+
+    <!-- Todo o script abaixo foi colocado no arquivo public/js/ping.js -->
+    <!-- <script>
       const socket = io();
       const button = document.querySelector('#pingButton');
 
@@ -28,6 +29,8 @@
       socket.on('ola', (mensagem) => createMessage(mensagem));
       // Quando o evento `pong` for emitido pelo servidor, vamos pegar a string mensagem enviada e passar para a função `createMessage`
       socket.on('pong', (mensagem) => createMessage(mensagem));
-    </script>
+    </script> -->
   </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.0.4/socket.io.js"></script>
+  <script src="./js/ping.js"></script>
 </html>
