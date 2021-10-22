@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Socket.IO - Trybe</title>
+  </head>
+  <body>
+    <button id="pingButton">PING</button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.0.4/socket.io.js"></script>
+    <script>
+      const socket = io();
+      const button = document.querySelector('#pingButton');
+
+      button.addEventListener('click', (e) => {
+        socket.emit('ping', e);
+        return false;
+      });
+    </script>
+  </body>
+</html>
